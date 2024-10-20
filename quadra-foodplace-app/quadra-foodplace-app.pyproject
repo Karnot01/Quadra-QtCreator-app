@@ -1,0 +1,17 @@
+{
+    "files": [
+        "mainwindow.py",
+        "mainwindow.ui",
+        "principal.py",
+        "principal.ui",
+        "register.py",
+        "register.ui",
+        "routes.py",
+        "helpers.py",
+        "RegisterFoodPlace.py",
+        "RegisterFoodPlace.ui",
+        "foodplaceprofile.py",
+        "foodplaceprofile.ui",
+        "foodplaceprofile.ui"
+    ]
+}

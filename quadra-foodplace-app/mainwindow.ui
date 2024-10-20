@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="boton_registro">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>370</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>¡Registrate!</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_email">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>130</y>
+      <width>261</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Ingresa tu correo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Inicio de Sesión</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>370</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>¿No tienes cuenta? </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="texto_error">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>460</y>
+      <width>451</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 12pt &quot;Sitka Banner&quot;;
+	color: rgb(255,0,0)
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton_inicio">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>270</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:#9c120b; /* Color de fondo */
+    border: 4px solid #000000; /* Borde del botón con el color RGB deseado */
+ 	color: #000000; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+	text-align: center;
+	text-decoration: none
+    font-size: 16px; /* Tamaño de la fuente */
+	margin: 4px 2px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+	border-radius: 20px; /* Bordes un poco redondeados
+    box-shadow: 0  4px 8px rgba(0, 0, 0, 0.2); /* Sombra de fondo */
+    transition: background-color 0.3s; /* Transición suave al pasar el cursor */
+}
+
+/* Oscurecer el botón al pasar el cursor */
+QPushButton:hover {
+    background-color: #1a1a1a; /* Color de fondo más oscuro */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Iniciar sesión</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_pass">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>190</y>
+      <width>261</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Ingresa tu contraseña</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
