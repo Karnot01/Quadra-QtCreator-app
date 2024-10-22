@@ -13,7 +13,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 - **Python 3.8+**
 - **PostgreSQL** (para gestionar la base de datos)
-- **Qt 5** (o superior)
+- **Qt 6** (o superior)
 
 Puedes instalar las dependencias del proyecto utilizando el archivo `requirements.txt`:
 
@@ -51,7 +51,7 @@ pip install -r requirements.txt
    Puedes ejecutar la aplicación directamente desde QtCreator o desde la terminal:
 
    ```bash
-   python main.py
+   python quadra-foodplace-app.pyproject.py
    ```
 
 ## Uso
@@ -62,15 +62,14 @@ pip install -r requirements.txt
 
 ## Estructura del Proyecto
 
-- `main.py`: Archivo principal que arranca la aplicación.
-- `database/`: Scripts de configuración y manejo de la base de datos PostgreSQL.
-- `models/`: Modelos de datos utilizados en la aplicación.
-- `views/`: Interfaces gráficas diseñadas con Qt.
-- `diagrams/`: Diagramas UML y otros documentos relacionados con el diseño de la aplicación.
+- `dir quadra-foodplace-app / quadra-foodplace-app.pyproject`: Archivo principal que arranca la aplicación.
+- `dir quadra-foodplace-app / Qt UI Files/`: Interfaces gráficas diseñadas con Qt.
+- `dir quadra_api/`: Archivos de configuración de la API
+- `Entregables`: Diagramas, Scripts de configuración de la base de datos PostgreSQL y otros documentos relacionados con el diseño de la aplicación.
 
 ## Diagramas
 
-En la carpeta `diagrams/` encontrarás diagramas UML que detallan la arquitectura y los flujos de datos de la aplicación.
+En la carpeta `Entregables` encontrarás diagramas que detallan la arquitectura y los flujos de datos de la aplicación.
 
 ## Contribuciones
 
@@ -93,10 +92,3 @@ Este proyecto está bajo una licencia privada. No está permitido el uso, distri
 - Repositorio: [Quadra en GitHub](https://github.com/Karnot01/Quadra-QtCreator-app.git)
 
 ---
-
-### Notas adicionales
-
-- Si en algún momento decides abrir el proyecto a contribuciones o cambiar la licencia, será necesario actualizar la sección correspondiente en este README.
-- Puedes agregar capturas de pantalla o GIFs de la interfaz gráfica de la aplicación para que los usuarios puedan visualizar cómo luce antes de instalarla. Esto es especialmente útil en proyectos con GUI como el tuyo.
-
-Si necesitas más ajustes o quieres añadir algo adicional, no dudes en decirme.
