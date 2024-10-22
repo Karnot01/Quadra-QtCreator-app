@@ -1,0 +1,46 @@
+CREATE TABLE Usuario (
+    id_usuario SERIAL PRIMARY KEY,
+    nombre_usuario VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    contraseña VARCHAR(255) NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Puesto_de_Comida (
+    id_puesto SERIAL PRIMARY KEY,
+    nombre_puesto VARCHAR(100) NOT NULL,
+    ubicación GEOMETRY(POINT, 4326) NOT NULL,  -- Tipo de dato geoespacial para coordenadas
+    reseña TEXT,
+    foto VARCHAR(255),
+    fecha_creación TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id_usuario INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+);
+
+CREATE TABLE Calificación (
+    id_calificación SERIAL PRIMARY KEY,
+    puntuación DECIMAL(2, 1) NOT NULL,  -- Puntuación del 1.0 al 5.0
+    fecha_calificación TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id_usuario INT NOT NULL,
+    id_puesto INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_puesto) REFERENCES Puesto_de_Comida(id_puesto)
+);
+
+CREATE TABLE Comentario (
+    id_comentario SERIAL PRIMARY KEY,
+    texto TEXT NOT NULL,
+    fecha_comentario TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id_usuario INT NOT NULL,
+    id_puesto INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (id_puesto) REFERENCES Puesto_de_Comida(id_puesto)
+);
+
+CREATE TABLE Foto (
+    id_foto SERIAL PRIMARY KEY,
+    url_foto VARCHAR(255) NOT NULL,
+    id_puesto INT NOT NULL,
+    FOREIGN KEY (id_puesto) REFERENCES Puesto_de_Comida(id_puesto)
+);
+
